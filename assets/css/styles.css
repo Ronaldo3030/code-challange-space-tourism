@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=Barlow:wght@100;200;300;400;500;600;700;800&family=Bellefair&display=swap');
+:root{
+    --dark-blue: #0b0d17;
+    --light-blue: #D0D6F9;
+    --white: #fff;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+    color: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,h2,h3,h4,h5,p,a,ul,li,span{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Bellefair', serif;
+    font-weight: 100;
+}
+h5{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+h1{
+    font-size: 10rem;
+}
+h2{
+    font-size: 10rem;
+}
+h3{
+    font-size: 5.6rem;
+}
+h4{
+    font-size: 3.2rem;
+}
+h5{
+    font-size: 2.8rem;
+    letter-spacing: 4.72px;
+    font-weight: 100;
+}
+p{
+    font-size: 1.8rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 32px;
+    font-weight: 100;
+}
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+
+.container-header{
+    margin-top: 4rem;
+    margin-left: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.line{
+    height: .1rem;
+    width: 40.3rem;
+    background-color: rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    z-index: 10;
+}
+.logo{
+    width: 4.8rem;
+    height: 4.8rem;
+}
+.bold{
+    font-weight: bold;
+    margin-right: .3rem;
+    letter-spacing: 2.7px;
+}
+.menu{
+    display: flex;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3.9rem 16.5rem 3.9rem 12.3rem;
+    max-height: 9.6rem;
+    max-width: 83rem;
+}
+.menu li{
+    color: var(--white);
+    margin-right: 4.8rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 2.7px;
+    transition: transform .3s ease-in-out;
+}
+.menu li:hover{
+    transform: scale(1.1);
+}
+.selected{
+    font-weight: 600 !important;
+}
+.container{
+    padding: 0 16.5rem;
+    margin-top: 6.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content{
+    max-width: 45rem;
+}
+.content h1{
+    margin: 2.4rem 0;
+}
+
+.btn-explore{
+    border: none;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    background-color: var(--white);
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    width: 27.4rem;
+    height: 27.4rem;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform .2s ease-in-out, filter .2s ease-in-out;
+    font-family: 'Bellefair', serif;
+    font-weight: 100;
+}
+
+.btn-explore:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 3rem white);
+}

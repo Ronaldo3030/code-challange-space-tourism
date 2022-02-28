@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=Barlow:wght@100;200;300;400;500;600;700;800&family=Bellefair&display=swap');
+:root{
+    --dark-blue: #0b0d17;
+    --light-blue: #D0D6F9;
+    --white: #fff;
+}
+
+body{
+    background-image: url(../starter-code/assets/destination/background-destination-desktop.jpg);
+}
+
+.container{
+    padding: 0 16.3rem;
+    margin-top: 5.1rem;
+}
+
+.destination h5{
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+    margin-bottom: 9.7rem;
+}
+.number{
+    font-weight: bold;
+    color: var(--white);
+}
+
+.img{
+    width: auto;
+    height: 44.5rem;
+    margin-bottom: 7.2rem;
+}
+
+.menu-destination{
+    display: flex;
+}
+.menu-destination li{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    height: 3.4rem;
+    margin-right: 3.5rem;
+    color: var(--light-blue);
+    transition: color 250ms ease-in-out;
+}
+
+.menu-destination li:hover{
+    color: #fff;
+}
+
+.menu-destination li:after {
+    display:block;
+    content: '';
+    margin-top: .3rem;
+    border-bottom: solid 3px #fff;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.menu-destination li:hover:after { 
+    transform: scaleX(1); 
+}
+.menu-destination li:hover:after{
+    transform-origin:  0% 50%;    
+}
+
+.info-moon p{
+    color: var(--white);
+}
+
+.select {
+    transition: all 250ms ease-in-out;
+    font-weight: 500 !important;
+    color: #fff !important;
+}
+
+.separation{
+    width: 100%;
+    height: 1px;
+    background-color: #383B4B;
+    margin-top: 5.4rem;
+    margin-bottom: 2.8rem;
+}
+
+.info-bottom{
+    display: flex;
+}
+
+.distance{
+    margin-right: 7.9rem;
+}
+
+.distance h5{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 2.36px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    color: var(--light-blue);
+}
+
+.km{
+    font-family: 'Bellefair', serif;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    white-space: nowrap;
+}
