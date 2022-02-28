@@ -158,3 +158,56 @@ p{
     transform: scale(1.1);
     filter: drop-shadow(0 0 3rem white);
 }
+
+@media(max-width:1100px) {
+    .container-header{
+        margin: 0;
+        margin-left: 3.8rem;
+    }
+    .line{
+        display: none;
+    }
+    .menu{
+        padding: 0;
+    }
+    .menu li{
+        margin: 0;
+    }
+    .menu a{
+        padding: 3rem;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .explore{
+        margin-top: 7.5rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .content{
+        text-align: center;
+    }
+
+    .content h5{
+        font-size: 2rem;
+        color: var(--light-blue);
+    }
+    .content h1{
+        font-size: 15rem;
+        margin: 1.2rem 0;
+    }
+    .content p{
+        color: var(--light-blue);
+    }
+}
+
+@media(max-width:735px) {
+    .bold{
+        display: none;
+    }
+    .menu a{
+        padding: 1.5rem;
+    }
+
+}
